@@ -1,5 +1,5 @@
 .high {background-color: red; color: white;}
 .medium {background-color:orange; color: brown;}
 .low {background-color:gray; color:black;}
-.done {background-color: black; color: cyan;}
+.done {background-color: black; color: cyan; text-decoration: line-through;}
 
