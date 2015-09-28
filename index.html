@@ -6,8 +6,7 @@ At the bottom of this page you should also include a heading for Assignments, an
 2. A Hobby or interest page. This page can be anything you want, as long as it incorporates some lists and some basic information about a hobby or interest of yours.
 3. A picture gallery. This page should use a table to provide a grid of image thumbnails. (use the width or height attributes to shrink them)
 -->
-<div id="header">Daniel Fields</div>
-<nav><a href="hobby.html">My Hobbies</a><br><a href="gallery.html">My Gallery</a></nav>
+
 <head>
   <style>
     h1 { 
@@ -18,12 +17,57 @@ At the bottom of this page you should also include a heading for Assignments, an
       color: white;}
       p {
       color: white;}
+      <style>
+         header {
+             position: fixed;
+             background-color: rgb(150,150,150);
+             top: 0px;
+             left: 0px;
+             width: 100%;
+             height: 20px;}
+             
+         nav {
+             margin-top: 20px;
+             margin-bottom: 0px;
+             background-color: rgb(100,100,100);}
+             
+         nav li {
+            display: inline;
+         }
+         section {
+             float: left;
+             width: 20%;
+             height: 500px;
+             background-color: blue;
+             color: white;
+         }
+         aside {
+             float: left;
+             width: 80%;
+             height: 500px;
+             background-color: red;
+         }
+         footer {
+             clear: both;
+             background-color: yellow;
+         }
+         body {
+             background-color: black;
+             margin: 0px;
+         }
       
   </style>
 <title>
 </title>
 </head>
 <body>
+  <nav>
+    <ul>
+    <li><a href="hobby.html">My Hobbies</a></li>
+    <li><a href="gallery.html">My Gallery</a></li>
+    </ul>
+    </nav>
+  <div id="header">Daniel Fields</div>
 <h1>
 Hello World
 </h1>
