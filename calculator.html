@@ -2,26 +2,34 @@
 <title>Calculator</title>
 <body>
 
-<script>
-</script>
-
 <label for="num1">Num1:</label> 
 <input id="num1" type=text value=# size="9">
-<br>
+
 <label for="num2">Num2:</label> 
 <input id="num2" type=text value=# size="9">
 <br>
 
-<button onclick="add();">+</button>
-<button onclick="sub();">-</button>
-<button onclick="multi();">*</button>
-<button onclick="divi();">/</button>
+<button onclick="add();">    +    </button>
+<button onclick="sub();">    -    </button>
+<button onclick="multi();">    *    </button>
+<button onclick="divi();">    /    </button>
 <br>
 <br>
-Result:
+
+Result: <input id="result" type=text value="" size="18">
+
+
+<script>
+add = function() {
+  num1 = document.querySelector("#num1").value;
+  num2 = document.querySelector("#num2").value;
+  sum = "num1+num2";
+  result.document.innerHTML = sum;
+}
 
 
 
+</script>
 
 
 
