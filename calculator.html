@@ -20,14 +20,25 @@ Result: <input id="result" type=text value="" size="18">
 
 
 <script>
+num1 = document.querySelector("#num1").value;
+num2 = document.querySelector("num1").value;
+result = document.querySelector("#result")
 add = function() {
-  num1 = document.querySelector("#num1").value;
-  num2 = document.querySelector("#num2").value;
-  sum = "int(num1)+int(num2)";
-  result = document.querySelector("#result");
+  sum = num1 + num2;
   result.innerHTML = sum;
 }
-
+sub = function() {
+  sum = num1 - num2;
+  result.innerHTML = sum;
+}
+multi = function() {
+  sum = num1 * num2;
+  result.innerHTML = sum;
+}
+divi = function() {
+  sum = num1 / num2;
+  result.innerHTML = sum;
+}
 
 
 </script>
