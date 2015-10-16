@@ -7,14 +7,27 @@ h1 {text-align: center;}
 p {background-color: blue;}
 
 </style>
-<script>
+
+
+
+<script type="text/javascript" src="todo.js">
+addtask = function() {
+  li = document.createElement("li");
+  cb = document.createElement("input");
+  cb.setAttribute("type", "checkbox");
+  litext = document.createTextNode()
+  
+}
 </script>
 
 <body>
 <h1> Busy Busy</h1>
 
 <p>
-  
+  <ul id="list">
+    
+    
+  </ul>
   
 </p>
 <br>
@@ -27,7 +40,7 @@ p {background-color: blue;}
     <option>Medium</option>
     <option>Low</option>
   </select>
-  <button onlclick="addtask();">New</button>
+  <button onclick="addtask();">New</button>
 </p>
 
 
