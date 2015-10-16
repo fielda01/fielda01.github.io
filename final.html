@@ -16,10 +16,12 @@ addtask = function() {
   cb = document.createElement("input");
   cb.setAttribute("type", "checkbox");
   text = document.querySelector("abc");
-  litext = document.querySelector(text);
+  litext = document.createTextNode(text);
   li.appendChild(cb);
   li.appendChild(litext):
-  document.body.appendChild(li);
+  list = document.querySelector("list");
+  list.appendChild(li);
+  document.body.appendChild(list);
   
 }
 </script>
@@ -49,13 +51,6 @@ addtask = function() {
 
 
 </body>
-
-
-
-
-
-
-
 
 
 
