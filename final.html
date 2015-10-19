@@ -26,8 +26,7 @@ addtask = function() {
   var cb = document.createElement("input");
   cb.setAttribute("type", "checkbox");
   var task = document.querySelector("#abc");
-  var litext = document.createTextNode("");
-  litext.appendChild(task);
+  var litext = document.createTextNode(task);
   li.appendChild(cb);
   li.appendChild(litext);
   tasklist.appendChild(li);
