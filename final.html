@@ -21,7 +21,7 @@ p {text-align:center;
 
 <script type="text/javascript"> //src="todo.js">
 addtask = function() {
-  list = document.querySelector('#list');
+  tasklist = document.querySelector('#tasklist');
   li = document.createElement("li");
   cb = document.createElement("input");
   cb.setAttribute("type", "checkbox");
@@ -29,8 +29,8 @@ addtask = function() {
   litext = document.createTextNode(text);
   li.appendChild(cb);
   li.appendChild(litext);
-  list.appendChild(li);
-  document.body.appendChild(list);
+  tasklist.appendChild(li);
+  document.body.appendChild(tasklist);
   
   
   //priority = document.querySelector('#priority')
@@ -42,7 +42,7 @@ addtask = function() {
 <h1>Busy Busy</h1>
 
 <p>
-  <ul id="list">
+  <ul id="tasklist">
     
     
   </ul>
