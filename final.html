@@ -23,12 +23,16 @@ p {text-align:center;
 addtask = function() {
   var tasklist = document.querySelector('#tasklist');
   var li = document.createElement("li");
+  
   var cb = document.createElement("input");
   cb.setAttribute("type", "checkbox");
+  
   var task = document.querySelector("#abc").value;
   var litext = document.createTextNode(task);
+  
   li.appendChild(cb);
   li.appendChild(litext);
+  li.className = document.querySelector("#priority").value;
   tasklist.appendChild(li);
   document.body.appendChild(tasklist);
   
