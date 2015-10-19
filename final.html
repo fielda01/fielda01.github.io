@@ -21,12 +21,12 @@ p {text-align:center;
 
 <script type="text/javascript"> //src="todo.js">
 addtask = function() {
-  tasklist = document.querySelector('#tasklist');
-  li = document.createElement("li");
-  cb = document.createElement("input");
+  var tasklist = document.querySelector('#tasklist');
+  var li = document.createElement("li");
+  var cb = document.createElement("input");
   cb.setAttribute("type", "checkbox");
-  task = document.querySelector("#abc");
-  litext = document.createTextNode();
+  var task = document.querySelector("#abc");
+  var litext = document.createTextNode();
   litext.appendChild(task);
   li.appendChild(cb);
   li.appendChild(litext);
