@@ -10,6 +10,7 @@ h1 {text-align: center;}
 .medium {color:orange;}
 .low {color: yellow;}
 
+.done {text-decoration: line-through;}
 
 p {text-align:center;
   background-color: blue;
@@ -46,8 +47,17 @@ addtask = function() {
 }  
   //mycb.onclick = boxChecked;
   //this.parentNode.classList.add("done")
+  
+doneTask = function() {
+  if (this.checked) {
+  this.parentNode.classList.add("done");
+  } else {
+    this.parentNode.classList.remove("done");
+  }
+  
 }
 
+cb.onclick = doneTask;
 </script>
 
 <body>
