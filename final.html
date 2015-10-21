@@ -29,6 +29,7 @@ addtask = function() {
   
   var cb = document.createElement("input");
   cb.setAttribute("type", "checkbox");
+  cb.onclick = doneTask;
   
   var task = document.querySelector("#abc").value;
   var litext = document.createTextNode(task);
@@ -60,7 +61,7 @@ doneTask = function() {
 </script>
 
 <body>
-<h1>lkn Task List</h1>
+<h1>Task List</h1>
 
 <p>
   <ul id="tasklist">
