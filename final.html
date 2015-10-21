@@ -12,7 +12,7 @@ h1 {text-align: center;}
 
 .done {text-decoration: line-through;}
 
-p.asdf {text-align:center;
+p {text-align:center;
   background-color: blue;
   margin-right: 300px;
   margin-left: 300px;
@@ -27,7 +27,7 @@ p.asdf {text-align:center;
 <body>
 <h1>kjh Task List</h1>
 
-<p id="asdf">
+<p>
   <ul id="tasklist">
     
     
@@ -36,7 +36,7 @@ p.asdf {text-align:center;
 </p>
 <br>
 <br>
-<p id="asdf">
+<p>
   Enter Task:
   <input type="text" id="abc"/>
   <select id="priority">
@@ -47,10 +47,11 @@ p.asdf {text-align:center;
   <button onclick="addtask();">New</button>
 </p>
 <script = "text/javascript" src="http://bnmnetp.github.io/CS130/listsaver.js">
-  localSave("http://fielda01.github.io/final.html");
+  localSave("tasklist");
   
-  restoreList("http://fielda01.github.io/final.html", doneTask);
+  restoreList("tasklist", doneTask);
 </script>
+
 <script type="text/javascript">
   window.onload = function() {
     restoreList("tasklist", doneTask);
