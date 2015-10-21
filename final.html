@@ -46,7 +46,16 @@ p.asdf {text-align:center;
   </select>
   <button onclick="addtask();">New</button>
 </p>
-
+<script = "text/javascript" src="http://bnmnetp.github.io/CS130/listsaver.js">
+  localSave("http://fielda01.github.io/final.html");
+  
+  restoreList("http://fielda01.github.io/final.html", doneTask);
+</script>
+<script type="text/javascript">
+  window.onload = function() {
+    restoreList("tasklist", doneTask);
+  }
+</script>
 
 
 
