@@ -5,15 +5,12 @@ h1 {text-align: center;}
 
 .high {
   color: red;
-  float: left;
 }
 .medium {
   color:orange;
-  float: center;
 }
 .low {
   color: yellow;
-  float: right;
 }
 
 .done {text-decoration: line-through;}
