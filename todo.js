@@ -13,7 +13,7 @@ addtask = function() {
   li.appendChild(litext);
   li.className = document.querySelector("#priority").value;
   tasklist.appendChild(li);
-  document.body.appendChild(tasklist);
+  
   
   
   //priority = document.querySelector('#priority')
