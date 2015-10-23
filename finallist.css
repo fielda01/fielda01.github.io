@@ -17,6 +17,7 @@ p {
   background-color: blue;
   text-align: center;
   width: 700px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
 }
