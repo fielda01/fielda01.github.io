@@ -16,4 +16,7 @@ div.ullist {
 p {
   background-color: blue;
   text-align: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
