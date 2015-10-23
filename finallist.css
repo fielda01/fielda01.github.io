@@ -17,6 +17,8 @@ h1 {text-align: center;}
 
 div.ullist {
   background-color: black;
+  border-style: groove;
+  border-color: rgb(200,200,200);
   
 }
 p {
