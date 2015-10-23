@@ -1,0 +1,15 @@
+h1 {text-align: center;}
+
+
+.high {color: red;}
+.medium {color:orange;}
+.low {color: yellow;}
+
+.done {text-decoration: line-through;}
+
+p {text-align:center;
+  background-color: blue;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
