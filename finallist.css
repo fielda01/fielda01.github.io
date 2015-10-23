@@ -14,6 +14,8 @@ div.ullist {
   
 }
 p {
+  border-style: groove;
+  border-color: purple;
   background-color: blue;
   text-align: center;
   width: 700px;
