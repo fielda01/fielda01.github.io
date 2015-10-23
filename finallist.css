@@ -8,7 +8,14 @@ h1 {text-align: center;}
 
 .done {text-decoration: line-through;}
 
-p {text-align:center;
+
+div.first {
+  margin: 20px;
+  padding: 20px;
+}
+
+div.second {
+  text-align:center;
   background-color: blue;
   width: 700px;
   margin-right: auto;
