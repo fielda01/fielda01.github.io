@@ -1,3 +1,7 @@
+window.onload = function() {
+    restoreList("tasklist", doneTask);
+  }
+
 addtask = function() {
   var tasklist = document.querySelector('#tasklist');
   var li = document.createElement("li");
@@ -13,6 +17,7 @@ addtask = function() {
   li.appendChild(litext);
   li.className = document.querySelector("#priority").value;
   tasklist.appendChild(li);
+  localSave("tasklist");
   
   
   
@@ -27,8 +32,10 @@ addtask = function() {
 doneTask = function() {
   if (this.checked) {
   this.parentNode.classList.add("done");
+  localSave("tasklist");
   } else {
     this.parentNode.classList.remove("done");
+    localSave("tasklist");
   }
   
 }
